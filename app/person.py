@@ -101,7 +101,7 @@ class Contact(Person):
         """
         detail存储了联系人的详细信息，是个字典
         {
-            'region': tuple[国家,省份,市], # 地区三元组
+            'region': tuple, # 地区三元组
             'signature': str, # 个性签名
             'telephone': str, # 电话号码，自己写的备注才会显示
             'gender': int, # 性别 0：未知，1：男，2：女

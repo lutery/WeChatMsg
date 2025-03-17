@@ -27,7 +27,7 @@ class TimeRangeDialog(QDialog, Ui_Dialog):
     def __init__(self, date_range=None, parent=None):
         """
 
-        @param date_range: tuple[Union[QDate, datetime.date],Union[QDate, datetime.date]] 限定的可选择范围
+        @param date_range: tuple 限定的可选择范围
         @param parent:
         """
         super().__init__(parent)

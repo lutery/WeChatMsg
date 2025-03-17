@@ -13,7 +13,7 @@ pic_head = [0xff, 0xd8, 0x89, 0x50, 0x47, 0x49]
 decode_code = 0
 
 
-def get_code(dat_read) -> tuple[int, int]:
+def get_code(dat_read) -> tuple:
     """
     自动判断文件类型，并获取dat文件解密码
     :param file_path: dat文件路径

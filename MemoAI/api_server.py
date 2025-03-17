@@ -568,7 +568,7 @@ def _resolve_path(path: Union[str, Path]) -> Path:
 
 def load_model_and_tokenizer(
         model_dir: Union[str, Path], trust_remote_code: bool = True
-) -> tuple[ModelType, TokenizerType]:
+) -> tuple:
     model_dir = _resolve_path(model_dir)
     if (model_dir / 'adapter_config.json').exists():
         model = AutoPeftModelForCausalLM.from_pretrained(

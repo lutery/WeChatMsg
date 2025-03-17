@@ -509,7 +509,7 @@ def my_message_counter(time_range, my_name=''):
         .set_series_opts(label_opts=opts.LabelOpts(formatter="{b}: {c}\n{d}%", position='inside'))
         # .render("./data/聊天统计/pie_scroll_legend.html")
     )
-    w = get_wordcloud(str_content)
+    w = get_wordcloud(str_content)CC
     return {
         'chart_data_sender': p2.dump_options_with_quotes(),
         'chart_data_types': p1.dump_options_with_quotes(),
